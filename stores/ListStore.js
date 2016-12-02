@@ -9,6 +9,8 @@ var ListStore = assign({}, EventEmitter.prototype, {
   },
 
   addNewItemHandler: function (text) {
+    console.log(2);
+    console.log(this.items);
     this.items.push(text);
   },
 

@@ -1,8 +1,11 @@
 var React = require('react');
 
 var MyButton = function(props) {
+  console.log(props);
   var items = props.items;
   var itemHtml = items.map(function (listItem, i) {
+    console.log("listItem=="+listItem);
+    console.log("i=="+i);
     return <li key={i}>{listItem}</li>;
   });
 

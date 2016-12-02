@@ -2,6 +2,7 @@ var React = require('react');
 var ListStore = require('../stores/ListStore');
 var ButtonActions = require('../actions/ButtonActions');
 var MyButton = require('./MyButton');
+var MyTB = require('./MyTB');
 
 var MyButtonController = React.createClass({
   getInitialState: function () {
@@ -29,7 +30,11 @@ var MyButtonController = React.createClass({
   },
 
   render: function() {
-    return <MyButton
+    // return <MyButton
+    //   items={this.state.items}
+    //   onClick={this.createNewItem}
+    // />;
+    return <MyTB
       items={this.state.items}
       onClick={this.createNewItem}
     />;
